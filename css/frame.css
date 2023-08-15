@@ -81,6 +81,13 @@ hr {
   margin: 0 0 10px 0;
 }
 
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 .menu-container {
   z-index: 2;
   position: relative;
@@ -473,6 +480,25 @@ hr {
 .max-width-140 {
   max-width: 140px;
 }
+
+.publication-video {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+
+    overflow: hidden;
+    border-radius: 10px !important;
+}
+
+.publication-video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 
 ol.publication {
   display: flex;

@@ -3,8 +3,7 @@
 
 <head>
   <title>FreeMan</title>
-  <link rel="icon" type="image/ico" href="img/freeman.ico">
-
+  <link rel="icon" type="image/x-icon" href="img/freeman.ico">
   <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" media="screen" rel="stylesheet" type="text/css" />
   <link href="css/frame.css" media="screen" rel="stylesheet" type="text/css" />
@@ -51,42 +50,49 @@
         <!-------------------------------------------------------------------------------------------->
         <!--Start Intro-->
         <div class="flex-row">
-          <div class="flex-item flex-column center">
-            <p class="text text-large" >
-              <a target="_blank" href="https://wangjiongw.github.io">Jiong WANG*</a><sup>1</sup>,
-              <a target="_blank" href="javascript:void(0)">Yufeng Yang*</a><sup>1</sup>,
-              <a target="_blank" href="javascript:void(0)">Wenbo Gou</a><sup>1</sup>,
-              <a target="_blank" href="javascript:void(0)">Bingliang Li</a><sup>1</sup>,
-              <a target="_blank" href="javascript:void(0)">Danqi Yan</a><sup>1</sup>,
-              <a target="_blank" href="https://ailingzeng.site/">Ailing Zeng</a><sup>3</sup>,
-              <a target="_blank" href="javascript:void(0)">Yijun Gao</a><sup>2</sup>, <br>
-              <a target="_blank" href="https://scholar.google.com/citations?user=gMbAGbMAAAAJ">Junle Wang</a><sup>2</sup>,
-              <a target="_blank" href="http://www.zhangruimao.site/">Ruimao Zhang</a><sup>1, &dagger;</sup><br>
-              <!-- <a target="_blank" href="javascript:void(0)">Laboratory</a><br> -->
-              The Chinese University of Hong Kong (Shenzhen)<sup>1</sup>,  
-              Tencent<sup>2</sup>, IDEA<sup>3</sup>
-              <small><br><sup>*</sup>Indicates Equal Contribution; </small><small><sup>&dagger;</sup>Indicates Corresponding Authors</small>
-            </p>
-          </div>
+          <!-- <div class="flex-item flex-column">
+            <img class="image" src="img/dummay-img.png">
+          </div> -->
           <div class="publication-video">
-            <iframe width="480" height="270" src="https://www.youtube.com/embed/g2h1YW-3n5k" title="FreeMan Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="640" height="360" src="https://www.youtube.com/embed/g2h1YW-3n5k" title="FreeMan Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+          <div class="flex-item flex-column">
+            <p class="text text-large">
+              <a target="_blank" href="https://wangjiongw.github.io">Jiong WANG*</a>, jiongwang@link.cuhk.edu.cn<br>
+              <a target="_blank" href="javascript:void(0)">Yufeng Yang*</a>, yufengyang@link.cuhk.edu.cn<br>
+              <a target="_blank" href="javascript:void(0)">Ruimao Zhang</a>, zhangruimao@cuhk.edu.cn<br>
+              <a target="_blank" href="javascript:void(0)">Laboratory</a><br>
+              <a target="_blank" href="javascript:void(0)">The Chinese University of Hong Kong (Shenzhen)</a><br>
+              <a target="_blank" href="javascript:void(0)">Tencent</a><br>
+              <a target="_blank" href="javascript:void(0)">IDEA</a><br>
+              <a target="_blank" href="javascript:void(0)">Longxiang Avene</a><br>
+              <a target="_blank" href="javascript:void(0)">Shenzhen, Guangdong, China</a>
+            </p>
           </div>
         </div>
         <div class="flex-row">
           <div class="flex-item flex-column">
             <p class="text add-top-margin">
-              <br>
+              Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel
+              augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget
+              condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit
+              vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae
+              sapien ut libero venenatis faucibus. Nullam quis ante.
             </p>
-            <h2>Table of Content</h2>
+            <h3>Table of Content</h3>
             <ul>
-              <li><a href="#abstract">Abstract</a></li>
-              <li><a href="#overview">Overview</a></li>
-              <li><a href="#format">Data Format</a></li>
-              <li><a href="#download">Download</a></li>
-              <li><a href="#use-term">Term of Usage</a></li>
-              <li><a href="#members">Team Members</a></li>
-              <li><a href="#contact">Contact Us</a></li>
-              <li><a href="#license">License</a></li>
+              <li><a href="#text-only">Text Only</a></li>
+              <li><a href="#buttons-and-inputs">Buttons and Inputs</a></li>
+              <li><a href="#images-and-image-button">Images and Image Button</a></li>
+              <li><a href="#text-around-image">Text around Image</a></li>
+              <li><a href="#centered-image-and-table">Centered Image and Table</a></li>
+              <li><a href="#adaptive-image">Adaptive Image</a></li>
+              <li><a href="#text-with-images-and-videos">Text with Images and Videos</a></li>
+              <li><a href="#iframe">Iframe</a></li>
+              <li><a href="#list-of-projects">List of Projects</a></li>
+              <li><a href="#gallery">Gallery (responsive size)</a></li>
+              <li><a href="#masonry">Masonry (responsive size)</a></li>
+              <li><a href="#survey">Survey</a></li>
             </ul>
           </div>
         </div>
@@ -95,13 +101,22 @@
         <!--Start Text Only-->
         <div class="flex-row">
           <div class="flex-item flex-column">
-            <h2 id="abstract">Abstract</h2>
+            <h2 id="text-only">Text Only</h2>
             <hr>
             <p class="text">
-              Estimating the 3D structure of the human body from natural scenes is a fundamental aspect of visual perception. This task carries great importance for fields like AIGC and human-robot interaction. In practice, 3D human pose estimation in real-world settings is a critical initial step in solving this problem. However, the current datasets, often collected under controlled laboratory conditions using complex motion capture equipment and unvarying backgrounds, are insufficient. The absence of real-world datasets is stalling the progress of this crucial task. To facilitate the development of 3D pose estimation, we present FreeMan, the first large-scale, real-world multi-view dataset. FreeMan was captured by synchronizing 8 smartphones across diverse scenarios. It comprises 11M frames from 8000 sequences, viewed from different perspectives. These sequences cover 40 subjects across 10 different scenarios, each with varying lighting conditions. We have also established an automated, precise labeling pipeline that allows for large scale processing efficiently. We provide comprehensive evaluation baselines for a range of tasks, underlining the significant challenges posed by FreeMan. Further evaluations of standard indoor/outdoor human sensing datasets reveal that FreeMan offers robust representation transferability in real and complex scenes.
+              Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica,
+              sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e
+              li plu commun vocabules. Omnicos directe al desirabilite de un nov lingua franca: On refusa continuar payar
+              custosi traductores. At solmen va esser.
             </p>
-            
-            <!-- <h3>Break Long URL</h3>
+            <p class="text">
+              Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+              vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? At vero eos et accusamus et iusto odio dignissimos
+              ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias
+              excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia
+              animi, id est laborum et dolorum fuga.
+            </p>
+            <h3>Break Long URL</h3>
             <p class="text">
               <a class="break-long-url" target="_blank" href="https://www.google.com/maps/place/Carnegie+Mellon+University/@40.4430576,-79.9431263,17z/data=!4m5!3m4!1s0x8834f21f58679a9f:0x88716b461fc4daf4!8m2!3d40.4428753!4d-79.9430922">https://www.google.com/maps/place/Carnegie+Mellon+University/@40.4430576,-79.9431263,17z/data=!4m5!3m4!1s0x8834f21f58679a9f:0x88716b461fc4daf4!8m2!3d40.4428753!4d-79.9430922</a>
             </p>
@@ -183,7 +198,7 @@
             <p class="text">
               Ma quande lingues coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del
               coalescent lingues. Li nov lingua franca va esser plu simplic e regulari quam li existent Europan lingues.
-            </p> -->
+            </p>
           </div>
         </div>
         <!--End Text Only-->
@@ -191,7 +206,7 @@
         <!--Start Text with Buttons-->
         <div class="flex-row">
           <div class="flex-item flex-column">
-            <h2 id="overview">Overview</h2>
+            <h2 id="buttons-and-inputs">Buttons and Inputs</h2>
             <hr>
             <p class="text">
               Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica,
@@ -320,7 +335,7 @@
         <!--Start Text with Images and Image buttons-->
         <div class="flex-row">
           <div class="flex-item flex-column">
-            <h2 id="format">Data Format</h2>
+            <h2 id="images-and-image-button">Images and Image Button</h2>
             <hr>
             <p class="text">
               Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica,
@@ -357,7 +372,7 @@
         <!--Start Text around Image-->
         <div class="flex-row">
           <div class="flex-item flex-column">
-            <h2 id="download">Download</h2>
+            <h2 id="text-around-image">Text around Image</h2>
             <hr>
             <p class="text">
               <img class="image image-wrap-text max-width-400" src="img/dummay-img.png">
@@ -401,7 +416,7 @@
         <!--Start Text with Centered Image and Table-->
         <div class="flex-row">
           <div class="flex-item flex-column">
-            <h2 id="use-term" class="no-top-margin">Term of Usage</h2>
+            <h2 id="centered-image-and-table" class="no-top-margin">Centered Image and Table</h2>
             <hr>
             <p class="text">
               Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica,
@@ -606,7 +621,7 @@
         <!--Start Text with Adaptive Image-->
         <div class="flex-row">
           <div class="flex-item flex-column">
-            <h2 id="members">Team Members</h2>
+            <h2 id="adaptive-image">Adaptive Image</h2>
             <hr>
             <p class="text">
               Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica,
@@ -648,7 +663,7 @@
         <!--Start Text with Images and Videos-->
         <div class="flex-row">
           <div class="flex-item flex-column">
-            <h2 id="contact" class="no-top-margin">Contact Us</h2>
+            <h2 id="text-with-images-and-videos" class="no-top-margin">Text with Images and Videos</h2>
             <hr>
             <p class="text">
               Ma quande lingues coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del
@@ -745,9 +760,9 @@
         <!--End Text with Images and Videos-->
         <!-------------------------------------------------------------------------------------------->
         <!--Start Text with Iframe-->
-        <!-- <div class="flex-row">
+        <div class="flex-row">
           <div class="flex-item flex-column">
-            <h2 id="license">License</h2>
+            <h2 id="iframe">Iframe</h2>
             <hr>
             <p class="text">
               Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel
@@ -763,13 +778,13 @@
               vel, luctus pulvinar, hendrerit id, lorem.
             </p>
           </div>
-        </div> -->
+        </div>
         <!--END Text with Iframe-->
         <!-------------------------------------------------------------------------------------------->
         <!--Start List of Projects-->
         <div class="flex-row">
           <div class="flex-item flex-column full-width">
-            <h2 id="license">License</h2>
+            <h2 id="list-of-projects">List of Projects</h2>
             <hr>
           </div>
         </div>
