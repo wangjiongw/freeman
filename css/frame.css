@@ -89,10 +89,10 @@ hr {
 }
 
 .menu-container {
-  z-index: 2;
-  position: relative;
+  z-index: 999;
+  position: fixed;
   width: 100%;
-  background-color: #333333;
+  background-color: #0052d9;
   min-width: 300px;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -287,6 +287,27 @@ hr {
   margin: 0;
 }
 
+.pdf-container {
+  /* border: 1px solid #ccc; */
+  padding: 10px;
+}
+.pdf-iframe {
+  width: 100%;
+  height: 600px;
+  border: none;
+}
+
+#map-container {
+  display: flex;
+  justify-content: center;
+}
+
+#map-container iframe {
+  width: 600px;
+  height: 450px;
+  border: 0;
+}
+
 .banner {
   position: relative;
   font-size: 16px;
@@ -477,8 +498,41 @@ hr {
   max-width: 400px;
 }
 
+.max-height-400 {
+  max-height: 400px;
+}
+
 .max-width-140 {
   max-width: 140px;
+}
+.max-square-150 {
+  max-width: 150px;
+  max-height: 150px;
+}
+
+.image-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.image-item {
+  flex: 1;
+  margin: 0 5px;
+  text-align: center;
+}
+
+.image-item img {
+  width: 100px; /* 根据需要调整图片的大小 */
+  height: 100px; /* 根据需要调整图片的大小 */
+}
+
+.image-caption {
+  margin-top: 10px;
+  text-transform: uppercase; /* 将字母转换为大写 */
+  font-weight: bold; /* 设置字体加粗 */
+  font-size: 18px; /* 设置字体大小 */
+  color: #366ef4; /* 设置字体颜色为红色 */
 }
 
 .publication-video {
@@ -486,7 +540,7 @@ hr {
     width: 100%;
     height: 0;
     padding-bottom: 56.25%;
-
+    margin: 0 auto;
     overflow: hidden;
     border-radius: 10px !important;
 }
@@ -922,7 +976,7 @@ ol.nested>li:before {
   border-collapse: collapse;
   border-spacing: 0;
   empty-cells: show;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 }
 
@@ -936,12 +990,17 @@ ol.nested>li:before {
 }
 
 .custom-table tr.bg-color-gray {
-  background-color: #dadada;
+  background-color: #d9e1ff;
 }
 
 .custom-table tr.bg-color-light-gray {
-  background-color: #efefef;
+  background-color: #f2f3ff;
 }
+
+.custom-table tr.bg-color-light-blue {
+  background-color: #b5c7ff;
+}
+
 
 .custom-table td,
 .custom-table th {
