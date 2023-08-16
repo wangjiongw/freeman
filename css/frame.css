@@ -75,10 +75,11 @@ li ul {
 }
 
 hr {
+  width: 100%;
   border: 0;
   height: 1px;
   background: rgb(220, 220, 220);
-  margin: 0 0 10px 0;
+  /* margin: 0 0 10px 0; */
 }
 
 .center {
@@ -254,7 +255,7 @@ hr {
   z-index: 1;
   position: relative;
   width: 100%;
-  min-width: 300px;
+  min-width: 900px;
 }
 
 .content {
