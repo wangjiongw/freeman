@@ -300,12 +300,30 @@ hr {
 #map-container {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 #map-container iframe {
   width: 600px;
   height: 450px;
   border: 0;
+  margin: auto;
+}
+
+.bibtex-container {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.bibtex-container pre {
+  white-space: pre-wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.bibtex-container code {
+  display: block;
+  text-indent: 0;
 }
 
 .banner {
