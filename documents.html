@@ -192,112 +192,12 @@
             <p class="text">
               SMPL parameters are stored in <code>motions</code> folder. Each file is named as <code>yyyymmdd_xxxxxxxx_subjNN_viewX.npy</code>, where <code>yyyymmdd</code> refer to capture date, <code>xxxxxxxx</code> refer to uuid of the session, <code>NN</code> refer to subject id, <code>X</code> refer to camera id. Each file is in shape of <code>[F, 85]</code>, where <code>F</code> is frame index, <code>85</code> is SMPL parameters.
             </p>
-            
           </div>
         </div>
         <!--End Text with Images and Image buttons-->
         <!-------------------------------------------------------------------------------------------->
-        <!--Start Dataset Structure-->
-        <!-- <div class="flex-row">
-          <div class="flex-item flex-column">
-            <h2 id="format">Bounding Box Annotations</h2>
-            <hr>
-            <p class="text">
-              FreeMan consists of 2 subsets corresponding to 30FPS & 60FPS, respectively. Each subset data includes RGB videos, 
-              camera parameters, 2D & 3D human keypoints, SMPL parameters, bounding boxes. File structure is shown as below. 
-              Data are grouped into different folders by data types. <br>
-              <code>yyyymmdd_xxxxxxxx_subjNN</code> is the unique name for each session. <code>yyyymmdd</code> refer to capture date, <code>xxxxxxxx</code> refer to uuid of the session, <code>NN</code> refer to subject id.
-              Details can be found in <b>Documentations</b>.
-            </p>
-            <pre>
-              <code>
-              FreeMan
-                ├── 30FPS
-                │   ├── bbox2d
-                │   │   ├── yyyymmdd_xxxxxxxx_subjNN.npy
-                │   │   └── ...
-                │   ├── keypoints2d
-                │   │   ├── yyyymmdd_xxxxxxxx_subjNN.npy
-                │   │   └── ...
-                │   ├── keypoints3d
-                │   │   ├── yyyymmdd_xxxxxxxx_subjNN.npy
-                │   │   └── ...
-                │   ├── motions
-                │   │   ├── yyyymmdd_xxxxxxxx_subjNN_view0.npy
-                │   │   ├── ...
-                │   │   ├── yyyymmdd_xxxxxxxx_subjNN_view8.npy
-                │   │   └── ...
-                │   ├── cameras
-                │   │   ├── yyyymmdd_xxxxxxxx_subjNN.json
-                │   │   └── ...
-                │   └── videos
-                │        ├── yyyymmdd_xxxxxxxx_subjNN
-                │        │   └── vframes
-                │        │       ├── c01.mp4
-                │        │       ├── ...
-                │        │       └── c08.mp4
-                │        ├── ...
-                ├── 60FPS
-                │   ├── ...
-                </code>
-            </pre>
-            <p class="text">
-              
-            </p>
-          </div>
-        </div> -->
         <!--End Text with Images and Image buttons-->
         <!-------------------------------------------------------------------------------------------->
-
-        <!--Start Dataset Structure-->
-        <div class="flex-row">
-          <div class="flex-item flex-column">
-            <h2 id="format">Pose Annotations</h2>
-            <hr>
-            <p class="text">
-              FreeMan consists of 2 subsets corresponding to 30FPS & 60FPS, respectively. Each subset data includes RGB videos, 
-              camera parameters, 2D & 3D human keypoints, SMPL parameters, bounding boxes. File structure is shown as below. 
-              Data are grouped into different folders by data types. <br>
-              <code>yyyymmdd_xxxxxxxx_subjNN</code> is the unique name for each session. <code>yyyymmdd</code> refer to capture date, <code>xxxxxxxx</code> refer to uuid of the session, <code>NN</code> refer to subject id.
-              Details can be found in <b>Documentations</b>.
-            </p>
-            <pre>
-              <code>
-              FreeMan
-                ├── 30FPS
-                │   ├── bbox2d
-                │   │   ├── yyyymmdd_xxxxxxxx_subjNN.npy
-                │   │   └── ...
-                │   ├── keypoints2d
-                │   │   ├── yyyymmdd_xxxxxxxx_subjNN.npy
-                │   │   └── ...
-                │   ├── keypoints3d
-                │   │   ├── yyyymmdd_xxxxxxxx_subjNN.npy
-                │   │   └── ...
-                │   ├── motions
-                │   │   ├── yyyymmdd_xxxxxxxx_subjNN_view0.npy
-                │   │   ├── ...
-                │   │   ├── yyyymmdd_xxxxxxxx_subjNN_view8.npy
-                │   │   └── ...
-                │   ├── cameras
-                │   │   ├── yyyymmdd_xxxxxxxx_subjNN.json
-                │   │   └── ...
-                │   └── videos
-                │        ├── yyyymmdd_xxxxxxxx_subjNN
-                │        │   └── vframes
-                │        │       ├── c01.mp4
-                │        │       ├── ...
-                │        │       └── c08.mp4
-                │        ├── ...
-                ├── 60FPS
-                │   ├── ...
-                </code>
-            </pre>
-            <p class="text">
-              
-            </p>
-          </div>
-        </div>
         <!--End Text with Images and Image buttons-->
         <!-------------------------------------------------------------------------------------------->
         <!--Start Credits-->
