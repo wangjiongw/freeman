@@ -1,0 +1,166 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>FreeMan</title>
+  <link rel="icon" type="image/x-icon" href="img/freeeman.ico">
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/frame.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/controls.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/widgets.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/custom.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/footer.js"></script>
+  <script src="js/widgets.js"></script>
+  <script src="js/util.js"></script>
+  <script src="js/custom.js"></script>
+  <style>
+    .menu-annotation {
+      color: rgb(255, 255, 255) !important;
+      opacity: 1 !important;
+      font-weight: 700 !important;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="menu-container"></div>
+  <div class="content-container">
+    <div class="content">
+      <div class="content-table flex-column">
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <p class="text"><br>
+              Get started with FreeMan annotations! Keypoints, SMPL and some failure cases from our annotation pipeline are shown here.
+            </p>
+          </div>
+        </div>
+        <!-------------------------------------------------------------------------------------------->
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <h2 id="centered-image-and-table" class="no-top-margin">Effect of Re-projecting 3D pose</h2>
+            <hr>
+            <p class="text">
+              To alleviate the effect of occlusion in single view, we re-project 3D pose to 2D pose and compare the 2D pose before/after re-projection. Here shows the comparison of 2D pose annotation before/after re-projection. 
+            </p>
+            <p class="text text-center graph-title">
+              Comparison of 2D pose annotation before/after re-projection
+            </p>
+            <img class="image center add-top-margin-small" src="img/reprojection.svg">
+          </div>
+        </div>
+        <!-------------------------------------------------------------------------------------------->
+        <!--Start SMPL annotation-->
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <h2>SMPL Annotation</h2>
+            <hr>
+            <p class="text">
+              With 3D keypoints obtained by multi-view triangulation, we fit SMPL into the 3D keypoints and obtain SMPL parameters. Here shows some examples of SMPL annotation in FreeMan.
+            </p>
+          </div>
+        </div>
+        <div class="gallery add-top-margin-small add-bottom-margin-small">
+          <div class="flex-column_thin">
+            <img src="gifs/SMPL/c01_20220929_470e095706_subj02.gif">
+            <!-- <h3>Phasellus Viverra</h3>
+            <div>Quisque Rutrum</div> -->
+          </div>
+          <div class="flex-column_thin">
+            <img src="gifs/SMPL/c01_20220929_aed79e7501_subj37.gif">
+            <!-- <h3>Phasellus Viverra</h3>
+            <div>Quisque Rutrum</div> -->
+          </div>
+          <div class="flex-column_thin">
+            <img src="gifs/SMPL/c02_20220625_5d287d8501_subj22.gif">
+            <!-- <h3>Phasellus Viverra</h3>
+            <div>Quisque Rutrum</div> -->
+          </div>
+          <div class="flex-column_thin">
+            <img src="gifs/SMPL/c02_20220818_12e6ea9002_subj25.gif">
+            <!-- <h3>Phasellus Viverra</h3>
+            <div>Quisque Rutrum</div> -->
+          </div>
+        </div>
+        <div class="gallery add-top-margin-small add-bottom-margin-small">
+          <div class="flex-column_thin">
+            <img src="gifs/SMPL/c02_20220927_31b800e204_subj06.gif">
+            <!-- <h3>Phasellus Viverra</h3>
+            <div>Quisque Rutrum</div> -->
+          </div>
+          <div class="flex-column_thin">
+            <img src="gifs/SMPL/c02_20220928_c99d182f09_subj17.gif">
+            <!-- <h3>Phasellus Viverra</h3>
+            <div>Quisque Rutrum</div> -->
+          </div>
+          <div class="flex-column_thin">
+            <img src="gifs/SMPL/c04_20220813_b69d27f005_subj12.gif">
+            <!-- <h3>Phasellus Viverra</h3>
+            <div>Quisque Rutrum</div> -->
+          </div>
+          <div class="flex-column_thin">
+            <img src="gifs/SMPL/c08_20220814_3d18837f08_subj35.gif">
+            <!-- <h3>Phasellus Viverra</h3>
+            <div>Quisque Rutrum</div> -->
+          </div>
+        </div>
+        <!--End SMPL annotation-->
+        <!-------------------------------------------------------------------------------------------->
+        <!-- Begin Annotation failure case-->
+        <div class="flex-item flex-column">
+          <h2>SMPL Failure Cases</h2>
+          <hr>
+          <p class="text">
+            Here shows failure cases of fitted SMPL annotations. Mostly the failures are resulted from incorrect fitting.
+          </p>
+        </div>
+        <div class="gallery add-top-margin-small add-bottom-margin-small">
+          <div class="flex-column_thin">
+            <img src="img/failure/fail1.jpg">
+            <!-- <h3>Phasellus Viverra</h3>
+            <div>Quisque Rutrum</div> -->
+          </div>
+          <div class="flex-column_thin">
+            <img src="img/failure/fail2.jpg">
+            <!-- <h3>Phasellus Viverra</h3>
+            <div>Quisque Rutrum</div> -->
+          </div>
+          <div class="flex-column_thin">
+            <img src="img/failure/fail3.jpg">
+            <!-- <h3>Phasellus Viverra</h3>
+            <div>Quisque Rutrum</div> -->
+          </div>
+          <div class="flex-column_thin">
+            <img src="img/failure/fail4.jpg">
+            <!-- <h3>Phasellus Viverra</h3>
+            <div>Quisque Rutrum</div> -->
+          </div>
+        </div>
+        <!--End annotation failure case -->
+        <!-------------------------------------------------------------------------------------------->
+        <!--Start Credits-->
+        <div class="flex-row">
+          <div class="flex-item flex-item-stretch flex-column">
+            <p class="text text-small text-italic add-top-margin-large">
+              Credits: Great thanks to awesome works related. <br>
+              Datasets: <span class="highlight-text">Human3.6M</span>, <span class="highlight-text">HuMMan</span>, <span class="highlight-text">3DPW</span><br>
+              Codebase: <span class="highlight-text">mmHuman3D</span>
+            </p>
+          </div>
+        </div>
+        <!--End Credits-->
+        <!-------------------------------------------------------------------------------------------->
+      </div>
+    </div>
+    <div class="footer-container"></div>
+  </div>
+</body>
+
+</html>

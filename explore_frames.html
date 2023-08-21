@@ -22,7 +22,7 @@
   <script src="js/util.js"></script>
   <script src="js/custom.js"></script>
   <style>
-    .menu-explore {
+    .menu-frames {
       color: rgb(255, 255, 255) !important;
       opacity: 1 !important;
       font-weight: 700 !important;
@@ -38,23 +38,10 @@
         <div class="flex-row">
           <div class="flex-item flex-column">
             <p class="text"><br>
-              Get started with FreeMan and explore data! Scenes examples, actor statistics, 2D pose comparison, motion blur visualization, and SMPL visualization.
+              Get started with FreeMan and explore more examples! Here shows scenes examples, actor & action statistics and motion blur examples.
             </p>
           </div>
         </div>
-        <!-------------------------------------------------------------------------------------------->
-      
-        <!-- <div class="flex-column">
-          <img src="img/dummay-img.png">
-          <h3>Phasellus Viverra</h3>
-          <div>Quisque Rutrum</div>
-          <div>
-            <a href="http://yenchiah.me/project-website-template/" target="_blank">Website</a>
-            &nbsp;|&nbsp;
-            <a href="http://yenchiah.me/project-website-template/" target="_blank">LinkedIn</a>
-          </div>
-        </div> -->
-
         <!-------------------------------------------------------------------------------------------->
         <div class="flex-row">
           <div class="flex-item flex-column">
@@ -278,163 +265,79 @@
           <div class="flex-column_thin">
             <img src="gifs/light/20220619_0aefa41501_c05_clip_small.gif">
             <h3>Backlighting</h3>
-            <!-- <div>Quisque Rutrum</div> -->
           </div>
-          <div class="flex-column_thin">
-            <img src="gifs/light/20220816_cfe32fcc02_c02_clip_small.gif">
-            <h3>Unusual Lighting</h3>
-            <!-- <div>Quisque Rutrum</div> -->
-          </div>
-          <div class="flex-column_thin">
-            <img src="gifs/light/20220816_f070c9f301_c02_clip_small.gif">
-            <h3>Over Exposure</h3>
-            <!-- <div>Quisque Rutrum</div> -->
-          </div>
-          <div class="flex-column_thin">
-            <img src="gifs/light/20220926_f469e7df06_c04_clip_small.gif">
-            <h3>Backlighting</h3>
-            <!-- <div>Quisque Rutrum</div> -->
-          </div>
-        </div>
-        <div class="gallery add-top-margin-small add-bottom-margin-small">
           <div class="flex-column_thin">
             <img src="gifs/light/20220928_a154d3ae11_c02_clip_small.gif">
             <h3>Backlighting</h3>
-            <!-- <div>Quisque Rutrum</div> -->
           </div>
           <div class="flex-column_thin">
             <img src="gifs/light/20220929_461ac1f304_c03_clip_small.gif">
             <h3>Backlighting</h3>
-            <!-- <div>Quisque Rutrum</div> -->
           </div>
+          <div class="flex-column_thin">
+            <img src="gifs/light/20220926_f469e7df06_c04_clip_small.gif">
+            <h3>Backlighting</h3>
+          </div>
+        </div>
+        <div class="gallery add-top-margin-small add-bottom-margin-small">
           <div class="flex-column_thin">
             <img src="gifs/light/20220929_470e095704_c06_clip_small.gif">
             <h3>Intense Lighting</h3>
-            <!-- <div>Quisque Rutrum</div> -->
           </div>
           <div class="flex-column_thin">
             <img src="gifs/light/20221001_1251be6602_c07_clip_small.gif">
             <h3>Intense Lighting</h3>
-            <!-- <div>Quisque Rutrum</div> -->
+          </div>
+          <div class="flex-column_thin">
+            <img src="gifs/light/20220816_cfe32fcc02_c02_clip_small.gif">
+            <h3>Unusual Lighting</h3>
+          </div>
+          <div class="flex-column_thin">
+            <img src="gifs/light/20220816_f070c9f301_c02_clip_small.gif">
+            <h3>Over Exposure</h3>
           </div>
         </div>
         <!--End Illumination-->
         <!-------------------------------------------------------------------------------------------->
+        <!--Start Motion Blur-->
         <div class="flex-row">
           <div class="flex-item flex-column">
-            <h2 id="centered-image-and-table" class="no-top-margin">Effect of Re-projecting 3D pose</h2>
+            <h2>Motion Blur</h2>
             <hr>
             <p class="text">
-              To alleviate the effect of occlusion, we re-project 3D pose to 2D pose and compare the 2D pose before/after re-projection. Here shows the comparison of 2D pose annotation before/after re-projection.
+              This part shows statistics of motion blur in our data and examples of some motion blur cases in FreeMan. We calculate Laplacian of each frame and use it to measure motion blur. The smaller the Laplacian variance, the more motion blur. It can be seen that 30FPS has more blur than 60FPS.
             </p>
-            <p class="text text-center graph-title">
-              Comparison of 2D pose annotation before/after re-projection
-            </p>
-            <img class="image center add-top-margin-small" src="img/reprojection.svg">
+            </a><img class="image center " src="img/motion_stat_fps30.svg">
+            </a><img class="image center " src="img/motion_stat_fps60.svg">
           </div>
-        </div>
-        <!-------------------------------------------------------------------------------------------->
-        <!--Start SMPL annotation-->
-        <div class="flex-row">
-          <div class="flex-item flex-column">
-            <h2>SMPL Annotation</h2>
-            <hr>
-            <p class="text">
-              With 3D keypoints obtained by multi-view triangulation, we fit SMPL into the 3D keypoints and obtain SMPL parameters. Here shows some examples of SMPL annotation in FreeMan.
-            </p>
-          </div>
-        </div>
-        <div class="gallery add-top-margin-small add-bottom-margin-small">
-          <div class="flex-column_thin">
-            <img src="gifs/SMPL/c01_20220929_470e095706_subj02.gif">
-            <!-- <h3>Phasellus Viverra</h3>
-            <div>Quisque Rutrum</div> -->
-          </div>
-          <div class="flex-column_thin">
-            <img src="gifs/SMPL/c01_20220929_aed79e7501_subj37.gif">
-            <!-- <h3>Phasellus Viverra</h3>
-            <div>Quisque Rutrum</div> -->
-          </div>
-          <div class="flex-column_thin">
-            <img src="gifs/SMPL/c02_20220625_5d287d8501_subj22.gif">
-            <!-- <h3>Phasellus Viverra</h3>
-            <div>Quisque Rutrum</div> -->
-          </div>
-          <div class="flex-column_thin">
-            <img src="gifs/SMPL/c02_20220818_12e6ea9002_subj25.gif">
-            <!-- <h3>Phasellus Viverra</h3>
-            <div>Quisque Rutrum</div> -->
-          </div>
-        </div>
-        <div class="gallery add-top-margin-small add-bottom-margin-small">
-          <div class="flex-column_thin">
-            <img src="gifs/SMPL/c02_20220927_31b800e204_subj06.gif">
-            <!-- <h3>Phasellus Viverra</h3>
-            <div>Quisque Rutrum</div> -->
-          </div>
-          <div class="flex-column_thin">
-            <img src="gifs/SMPL/c02_20220928_c99d182f09_subj17.gif">
-            <!-- <h3>Phasellus Viverra</h3>
-            <div>Quisque Rutrum</div> -->
-          </div>
-          <div class="flex-column_thin">
-            <img src="gifs/SMPL/c04_20220813_b69d27f005_subj12.gif">
-            <!-- <h3>Phasellus Viverra</h3>
-            <div>Quisque Rutrum</div> -->
-          </div>
-          <div class="flex-column_thin">
-            <img src="gifs/SMPL/c08_20220814_3d18837f08_subj35.gif">
-            <!-- <h3>Phasellus Viverra</h3>
-            <div>Quisque Rutrum</div> -->
-          </div>
-        </div>
-        <!--End SMPL annotation-->
-        <!-------------------------------------------------------------------------------------------->
-        <!--Begin Annotation failure case-->
-        <!-- <div class="flex-item flex-column">
-          <h2>Failure Case Analysis</h2>
-          <hr>
           <p class="text">
-            Here shows cross-domain test on 3DPW test set of HMR trained on Human3.6M, HuMMan and FreeMan, respectively. Results obtained by visualization tools in mmHuman3D.
+            To demonstrate laplacian value and visual effects, we show some example images with different laplacian values. The smaller the laplacian value, the more motion blur.
           </p>
+          <div class="gallery add-top-margin-small add-bottom-margin-small">
+            <div class="flex-column_thin">
+              <img src="img/s_100.jpg">
+              <h3>0 ~ 100</h3>
+              <!-- <div>Hands blur</div> -->
+            </div>
+            <div class="flex-column_thin">
+              <img src="img/100-500.jpg">
+              <h3>100 ~ 500</h3>
+            </div>
+            <div class="flex-column_thin">
+              <img src="img/500-1000.jpg">
+              <h3>500 ~ 1000</h3>
+            </div>
+            <div class="flex-column_thin">
+              <img src="img/l_1000.jpg">
+              <h3>1000 ~</h3>
+            </div>
+          </div>  
         </div>
-        <div class="gallery add-top-margin-small add-bottom-margin-small">
-          <div class="flex-column">
-            <img src="gifs/3dpw_test/3dpw1.gif">
-            <h3>Phasellus Viverra</h3>
-            <div>Quisque Rutrum</div>
-          </div>
-          <div class="flex-column">
-            <img src="gifs/3dpw_test/3dpw2.gif">
-            <h3>Phasellus Viverra</h3>
-            <div>Quisque Rutrum</div>
-          </div>
-          <div class="flex-column">
-            <img src="gifs/3dpw_test/3dpw3.gif">
-            <h3>Phasellus Viverra</h3>
-            <div>Quisque Rutrum</div>
-          </div>
-          <div class="flex-column">
-            <img src="gifs/3dpw_test/3dpw4.gif">
-            <h3>Phasellus Viverra</h3>
-            <div>Quisque Rutrum</div>
-          </div>
-        </div> -->
-        <!--End annotation failure case-->
-        <!-------------------------------------------------------------------------------------------->
-        <!--Start Masonry-->
-        <!-- <div class="flex-row">
-          <div class="flex-item flex-column">
-            <h2>More example frames</h2>
-            <hr>
-            <p class="text">
-              Photo Wall
-            </p>
-          </div>
-        </div>
-        <div class="masonry add-top-margin-small add-bottom-margin-small" id="masonry"></div> -->
-        <!--End Masonry-->
-        <!-------------------------------------------------------------------------------------------->
+        
+        
+        <!--End Motion Blur-->
+
+
         <!--Start Credits-->
         <div class="flex-row">
           <div class="flex-item flex-item-stretch flex-column">
