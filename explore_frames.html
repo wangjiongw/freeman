@@ -61,7 +61,7 @@
         <!--Start Scene examples-->
         <div class="flex-row">
           <div class="flex-item flex-column">
-            <h2>Scenes</h2>
+            <h2>Scenes Overview</h2>
             <hr>
             <p class="text">
               FreeMan are collected in real scenes, consisting of 10 types of real scenarios and 27 locations. Here shows 1 example of each type of scenes.
@@ -115,7 +115,7 @@
         <!-------------------------------------------------------------------------------------------->
         <!--Begin 3DPW comparison-->
         <div class="flex-item flex-column">
-          <h2>HMR Cross-Domain Test </h2>
+          <h2>In-the-wild Test: Single Human</h2>
           <hr>
           <p class="text">
             To examine <b>generalization ability</b> of FreeMan and its counterpart datasets, we trained HMR on Human3.6M, HuMMan and FreeMan, respectively. 
@@ -148,44 +148,63 @@
         </div>
         <!-------------------------------------------------------------------------------------------->
         <div class="flex-item flex-column">
-          <h2>Multi-human</h2>
+          <h2>In-the-wild Test: Multi-human</h2>
           <hr>
           <p class="text">
-            To validate effectiveness in multi-human scenarios, we test HMR trained on Human3.6M, HuMMan and FreeMan, respectively. Input videos are selected from <a href="https://aistdancedb.ongaaccel.jp/">AIST database</a>. Results obtained by visualization tools in <a href="https://github.com/open-mmlab/mmhuman3d">mmHuman3D</a>.
+            To validate effectiveness in multi-human scenarios, we test HMR trained on Human3.6M, HuMMan and FreeMan, respectively. Input videos are selected from <a href="https://aistdancedb.ongaaccel.jp/">AIST database</a>. Results obtained by visualization tools in <a href="https://github.com/open-mmlab/mmhuman3d">mmHuman3D</a>. Test results by HMR trained on Human3.6M / HuMMan / FreeMan are shown below, respectively.
           </p>
+          
+          <img class="image center add-top-margin-small" src="gifs/group_dance/1_1.gif">
+          <p class="text text-center graph-title"><b>gBR_sGR_c01_d04_d05_d06_mBR0_ch01</b> from AIST database</p>
+          <div class="text text-center">Human3.6M / HuMMan / FreeMan</div>
+          <img class="image center add-top-margin-small" src="gifs/group_dance/1_2.gif">
+          <p class="text text-center graph-title"><b>gBR_sGR_c01_d04_d05_d06_mBR0_ch01</b> from AIST database</p>
+          <div class="text text-center">Human3.6M / HuMMan / FreeMan</div>
+          
+          <img class="image center add-top-margin-small" src="gifs/group_dance/2-1.gif">
+          <p class="text text-center graph-title"><b>gMH_sGR_c09_d22_d23_d24_mMH4_ch03</b> from AIST database</p>
+          <div class="text text-center">Human3.6M / HuMMan / FreeMan</div>
+          
+          <img class="image center add-top-margin-small" src="gifs/group_dance/kpop1.gif">
+          <p class="text text-center graph-title">Video from <a href="">Bilibili</a></p>
+          <div class="text text-center">Human3.6M / HuMMan / FreeMan</div>
+
+          <img class="image center add-top-margin-small" src="gifs/group_dance/kpop2.gif">
+          <p class="text text-center graph-title">Video from <a href="">Bilibili</a></p>
+          <div class="text text-center">Human3.6M / HuMMan / FreeMan</div>
+
+          <img class="image center add-top-margin-small" src="gifs/group_dance/kpop3.gif">
+          <p class="text text-center graph-title">Video from <a href="">Bilibili</a></p>
+          <div class="text text-center">Human3.6M / HuMMan / FreeMan</div>
+
         </div>
+        <!--         
         <div class="gallery add-top-margin-small add-bottom-margin-small">
           <div class="flex-column">
             <img src="gifs/group/freeman1_1.gif">
             <h3>FreeMan</h3>
-            <!-- <div>Pack Bags</div> -->
           </div>
           <div class="flex-column">
             <img src="gifs/group/freeman2_1.gif">
             <h3>FreeMan</h3>
-            <!-- <div>Fencing</div> -->
           </div>
           <div class="flex-column">
             <img src="gifs/group/h36m1_1.gif">
             <h3>Human3.6M</h3>
-            <!-- <div>Move Box</div> -->
           </div>
           <div class="flex-column">
             <img src="gifs/group/h36m2_1.gif">
             <h3>Human3.6M</h3>
-            <!-- <div>Parcour</div> -->
           </div>
           <div class="flex-column">
             <img src="gifs/group/humman1_1.gif">
             <h3>HuMMan</h3>
-            <!-- <div>Move Box</div> -->
           </div>
           <div class="flex-column">
             <img src="gifs/group/humman2_1.gif">
             <h3>HuMMan</h3>
-            <!-- <div>Parcour</div> -->
           </div>
-        </div>
+        </div> -->
         <!-------------------------------------------------------------------------------------------->
         <!--Start subject STATS-->
         <div class="flex-row">
@@ -225,9 +244,11 @@
           <div class="flex-item flex-column">
             <h2>Action Sets</h2>
             <hr>
-            <p class="text">
-            <p class="text">
-              Here shows overview of action sets in corresponding scenes. Block size represents corresponding frame number. <a href="action_stat.html" target="_blank">Click here for interactive visualization</a>.
+            <p>
+              Here shows overview of action sets in corresponding scenes. Block size represents corresponding frame number. <br>
+            </p>
+            <p>
+              <a href="action_stat.html" target="_blank"><b>Click here for interactive visualization</b></a>.
             </p>
             </a><img class="image center " src="img/actions.svg">
           </div>
@@ -347,28 +368,28 @@
             <p class="text">
               This part shows statistics of motion blur in our data and examples of some motion blur cases in FreeMan. We calculate Laplacian of each frame and use it to measure motion blur. The smaller the Laplacian variance, the more motion blur. It can be seen that 30FPS has more blur than 60FPS.
             </p>
-            </a><img class="image center " src="img/motion_stat_fps30.svg">
-            </a><img class="image center " src="img/motion_stat_fps60.svg">
+            </a><img class="image center " src="img/motion_blur/motion_stat_fps30.svg">
+            </a><img class="image center " src="img/motion_blur/motion_stat_fps60.svg">
           </div>
           <p class="text">
             To demonstrate laplacian value and visual effects, we show some example images with different laplacian values. The smaller the laplacian value, the more motion blur.
           </p>
           <div class="gallery add-top-margin-small add-bottom-margin-small">
             <div class="flex-column_thin">
-              <img src="img/s_100.jpg">
+              <img src="img/motion_blur/s100_blur.png">
               <h3>0 ~ 100</h3>
               <!-- <div>Hands blur</div> -->
             </div>
             <div class="flex-column_thin">
-              <img src="img/100-500.jpg">
+              <img src="img/motion_blur/100-500_blur.png">
               <h3>100 ~ 500</h3>
             </div>
             <div class="flex-column_thin">
-              <img src="img/500-1000.jpg">
+              <img src="img/motion_blur/500-1000.jpg">
               <h3>500 ~ 1000</h3>
             </div>
             <div class="flex-column_thin">
-              <img src="img/l_1000.jpg">
+              <img src="img/motion_blur/l_1000.jpg">
               <h3>1000 ~</h3>
             </div>
           </div>  
