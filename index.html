@@ -34,10 +34,12 @@
       <div class="banner-table flex-column">
         <div class="flex-row">
           <div class="flex-item flex-column">
-            <h2 class="add-top-margin-small">FreeMan: Towards benchmarking 3D HPE in the wild</h2>
+            <h2 class="add-top-margin-small"><a href="https://arxiv.org/abs/2309.05073">FreeMan: Towards benchmarking 3D HPE in the wild</a></h2>
             <p class="text">
-              We present <b>FreeMan</b>, the first large-scale, real-world multi-view dataset. FreeMan was captured by synchronizing 8 smartphones across diverse scenarios. It comprises <b>11M</b> frames from 8000 sequences, viewed from different perspectives. 
+              Welcom to our project! <b>FreeMan</b>, the first large-scale real-world multi-view dataset. FreeMan was captured by synchronizing 8 smartphones across diverse scenarios. It comprises <b>11M</b> frames from 8000 sequences, viewed from different perspectives. 
               These sequences cover <b>40</b> subjects across <b>10</b> different scenarios, <b>27</b> locations, each with varying lighting conditions.
+              <br>
+              FreeMan dataset can serve as a large-scale pre-train dataset and a novel benchmark for 3D human pose estimation in the wild.
             </p>
           </div>
         </div>
@@ -47,9 +49,54 @@
     <!-------------------------------------------------------------------------------------------->
     <div class="content">
       <div class="content-table flex-column">
+        <div class="flex-item flex-column">
+          <div class="image-row">
+            <div class="image-item">
+              <a class="custom-button-flat" href="#overview" target="_self">
+                <span>🏡 Overview</span>
+              </a>
+            </div>
+            <div class="image-item">
+              <a class="custom-button-flat" href="#paper" target="_self">
+                <span>📄 Paper</span>
+              </a>
+            </div>
+            <div class="image-item">
+              <a class="custom-button-flat" href="#download" target="_self">
+                <span>💾 Download</span>
+              </a>
+            </div>
+            
+          </div>
+          <div class="image-row">
+            <div class="image-item">
+              <a class="custom-button-flat" href="#format" target="_self">
+                <span>🖥️ Data Structure</span>
+              </a>
+            </div>
+            <div class="image-item">
+              <a class="custom-button-flat" href="#use-term" target="_self">
+                <span>📘 License</span>
+              </a>
+            </div>
+            <div class="image-item">
+              <a class="custom-button-flat" href="#members" target="_self">
+                <span>📧 Contact Us</span>
+              </a>
+            </div>
+          </div>
+          
+        </div>
+        
         <!-------------------------------------------------------------------------------------------->
+        
+        
+
         <!--Start Intro-->
         <div class="flex-row">
+          <div class="publication-video">
+            <iframe width="320" height="180" src="https://www.youtube.com/embed/g2h1YW-3n5k" title="FreeMan Intro Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
           <div class="flex-item flex-column center">
             <p class="text text-large" >
               <a target="_blank" href="https://wangjiongw.github.io">Jiong WANG*</a><sup>1</sup>,
@@ -67,50 +114,23 @@
               <small><br><sup>*</sup>Indicates Equal Contribution; </small><small><sup>&dagger;</sup>Indicates Corresponding Authors</small>
             </p>
           </div>
-
-          <div class="publication-video">
-            <iframe width="480" height="270" src="https://www.youtube.com/embed/g2h1YW-3n5k" title="FreeMan Intro Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-          </div>
         </div>
-
+        <!-------------------------------------------------------------------------------------------->
         <div class="flex-row">
           <div class="flex-item flex-column">
-            <p class="text add-top-margin">
-              <br>
-            </p>
-            <h2>Table of Content</h2>
+            <h2>News</h2>
+            <hr>
             <ul>
-              <!-- <li><a href="#abstract">Abstract</a></li> -->
-              <li><a href="#overview">Overview</a></li>
-              <li><a href="#paper">Paper</a></li>
-              <li><a href="#format">Data Structure</a></li>
-              <li><a href="#download">Download</a></li>
-              <li><a href="#use-term">Term of Usage</a></li>
-              <li><a href="#members">Team Members</a></li>
-              <li><a href="#contact">Contact Us</a></li>
-              <li><a href="#license">License</a></li>
+              <li>📅 [2023.9] FreeMan is ready on Huggingface & OpenXLab. Start from <a href="download.html">Download Page</a>!</li>
+              <li>📅 [2023.9] Technical report released. <a href="https://groups.google.com/g/freeman_benchmark">Please join FreeMan Benchmark Group on Google Group and Subscribe updates.</a></li>
             </ul>
           </div>
         </div>
-        <!-------------------------------------------------------------------------------------------->
-        <!--Start Abstract Only-->
-        <!-- <div class="flex-row">
-          <div class="flex-item flex-column">
-            <h2 id="abstract">Abstract</h2>
-            <hr>
-            <p class="text">
-              Estimating the 3D structure of the human body from natural scenes is a fundamental aspect of visual perception. This task carries great importance for fields like AIGC and human-robot interaction. In practice, 3D human pose estimation in real-world settings is a critical initial step in solving this problem. However, the current datasets, often collected under controlled laboratory conditions using complex motion capture equipment and unvarying backgrounds, are insufficient. The absence of real-world datasets is stalling the progress of this crucial task. To facilitate the development of 3D pose estimation, we present FreeMan, the first large-scale, real-world multi-view dataset. FreeMan was captured by synchronizing 8 smartphones across diverse scenarios. It comprises 11M frames from 8000 sequences, viewed from different perspectives. These sequences cover 40 subjects across 10 different scenarios, each with varying lighting conditions. We have also established an automated, precise labeling pipeline that allows for large scale processing efficiently. We provide comprehensive evaluation baselines for a range of tasks, underlining the significant challenges posed by FreeMan. Further evaluations of standard indoor/outdoor human sensing datasets reveal that FreeMan offers robust representation transferability in real and complex scenes.
-            </p>
-          </div>
-        </div> -->
-        <!--End Abstract Only-->
-        <!-------------------------------------------------------------------------------------------->
         <!--Start Overview-->
         <div class="flex-row">
           <div class="flex-item flex-column">
             <h2 id="overview">Overview</h2>
             <hr>
-            
             <div class="image-row">
               <div class="image-item">
                 <a href="https://github.com/yenchiah/project-website-template" target="_blank" >
@@ -138,7 +158,6 @@
                 <p class="image-caption">3D Pose Annotation</p>
               </div>
             </div>
-
             <div class="custom-table-container center add-top-margin-small">
               <table class="custom-table">
                 <thead>
@@ -262,77 +281,27 @@
                 <b>Fixed</b> means cameras are fixed within the whole dataset, while our cameras are movable and camera poses vary among video sequences.
               </small>
             </div>
-            <!-- <p class="text">
-              More Examples can found in Explore.
-            </p> -->
+
             <p class="text text-center graph-title">
               Pose annotation pipeline
             </p>
             <img class="image center max-height-400 add-top-margin-small" src="img/pipeline.svg">
+            <p>More examples for <a href="explore_frames.html">Data</a> and <a href="explore_annotation.html">Annotations</a> can be found in corresponding pages.</p>
           </div>
         </div>
         <!--End Text with Buttons-->
         <!-------------------------------------------------------------------------------------------->
         <div class="pdf-container">
           <div class="flex-item flex-column">
-            <h2 id="paper">Paper</h2>
+            <h2 id="paper">Paper (<a href="https://arxiv.org/abs/2309.05073">Arxiv</a>)</h2>
             <hr>
-            <embed src="pdf/Freeman_towards_benchmarking.pdf" type="application/pdf" width="100%" height="500px" />
+            <embed src="pdf/FreeMan_Dataset.pdf" type="application/pdf" width="100%" height="500px" />
           </div>
+          <p>If you find FreeMan useful and used it in your research, please <a href="https://scholar.googleusercontent.com/scholar.bib?q=info:9bDVAPVWXVsJ:scholar.google.com/&output=citation&scisdr=ClG-4YWeEJCJ5qfPxJc:AFWwaeYAAAAAZQLJ3Jdf27RpxCJ1d6LgleCLKEM&scisig=AFWwaeYAAAAAZQLJ3CZ5-Yx9o0c6K9fg2n8pB-E&scisf=4&ct=citation&cd=-1&hl=zh-CN">cite our paper</a>.</p>
+          
         </div>
         
         <!--End Text with Buttons-->
-        <!-------------------------------------------------------------------------------------------->
-        <!--Start Dataset Structure-->
-        <div class="flex-row">
-          <div class="flex-item flex-column">
-            <h2 id="format">Data Structure</h2>
-            <hr>
-            <p class="text">
-              FreeMan consists of 2 subsets corresponding to 30FPS & 60FPS, respectively. Each subset data includes RGB videos, 
-              camera parameters, 2D & 3D human keypoints, SMPL parameters, bounding boxes. File structure is shown as below. 
-              Data are grouped into different folders by data types. <br>
-              <code>yyyymmdd_xxxxxxxx_subjNN</code> is the unique name for each session. <code>yyyymmdd</code> refer to capture date, <code>xxxxxxxx</code> refer to uuid of the session, <code>NN</code> refer to subject id.
-              Details can be found in <b>Documentations</b>.
-            </p>
-            <pre>
-              <code>
-              FreeMan
-                ├── 30FPS
-                │   ├── bbox2d
-                │   │   ├── yyyymmdd_xxxxxxxx_subjNN.npy
-                │   │   └── ...
-                │   ├── keypoints2d
-                │   │   ├── yyyymmdd_xxxxxxxx_subjNN.npy
-                │   │   └── ...
-                │   ├── keypoints3d
-                │   │   ├── yyyymmdd_xxxxxxxx_subjNN.npy
-                │   │   └── ...
-                │   ├── motions
-                │   │   ├── yyyymmdd_xxxxxxxx_subjNN_view0.npy
-                │   │   ├── ...
-                │   │   ├── yyyymmdd_xxxxxxxx_subjNN_view8.npy
-                │   │   └── ...
-                │   ├── cameras
-                │   │   ├── yyyymmdd_xxxxxxxx_subjNN.json
-                │   │   └── ...
-                │   └── videos
-                │        ├── yyyymmdd_xxxxxxxx_subjNN
-                │        │   └── vframes
-                │        │       ├── c01.mp4
-                │        │       ├── ...
-                │        │       └── c08.mp4
-                │        ├── ...
-                ├── 60FPS
-                │   ├── ...
-                </code>
-            </pre>
-            <p class="text">
-              
-            </p>
-          </div>
-        </div>
-        <!--End Text with Images and Image buttons-->
         <!-------------------------------------------------------------------------------------------->
         <!--Start Text around Image-->
         <div class="flex-row">
@@ -341,11 +310,16 @@
             <hr>
             <p class="text">
               <img class="image image-wrap-text max-width-140" src="img/download.svg">
-              FreeMan dataset is open-sourced under the license of CC-BY-NC-4.0 and is for <b>Research Purpose ONLY</b>. No commercial usage is allowed. <br>
-              To download FreeMan data, users need to fill in the <a href="https://forms.gle/XN3UE6ZqPYyQG76Y7">Application Form</a> / <a href="https://wj.qq.com/s2/13036236/c8c5/">申请表格</a> to get the dataset access. 
-              <b>Meanwhile, you need to submit an access application on <a href="https://huggingface.co/datasets/wjwow/FreeMan" target="_blank">Huggingface</a></b>.
+              FreeMan dataset is open-sourced under the license of CC-BY-NC-4.0 and is for <b>Research Purpose ONLY</b>. <b>No commercial usage is allowed.</b> <br>
+              To download FreeMan data, users are required to complete following steps. <b>Detailed instructions in <a href="download.html">Download</a> page.</b>
               <br>
-              Please follow detailed instructions in <a href="download.html">Download</a> page.
+              1. Download and sign the dataset usage agreement.
+              <br>
+              2. Complete the <a href="https://forms.gle/XN3UE6ZqPYyQG76Y7">Application Form</a> or <a href="https://wj.qq.com/s2/13036236/c8c5/">申请表格</a> for information backup. 
+              <br>
+              3. Submit an access application on data host platform: <a href="https://huggingface.co/datasets/wjwow/FreeMan" target="_blank">Huggingface</a> or <a href="https://openxlab.org.cn/datasets/wangjiongwow/FreeMan" target="_blank">OpenXLab(Coming)</a>.
+              <br>
+              
             </p>
             
           </div>
@@ -353,6 +327,57 @@
         <!--End Text around Image-->
         <!-------------------------------------------------------------------------------------------->
       </div>
+      <!--Start Dataset Structure-->
+      <div class="flex-row">
+        <div class="flex-item flex-column">
+          <h2 id="format">Data Structure</h2>
+          <hr>
+          <p class="text">
+            FreeMan consists of 2 subsets corresponding to 30FPS & 60FPS, respectively. Each subset data includes RGB videos, 
+            camera parameters, 2D & 3D human keypoints, SMPL parameters, bounding boxes. File structure is shown as below. 
+            Data are grouped into different folders by data types. <br>
+            <code>yyyymmdd_xxxxxxxx_subjNN</code> is the unique name for each session. <code>yyyymmdd</code> refer to capture date, <code>xxxxxxxx</code> refer to uuid of the session, <code>NN</code> refer to subject id.
+            Details can be found in <b><a href="documents.html">Documentations</a></b>.
+          </p>
+          <pre>
+            <code>
+            FreeMan
+              ├── 30FPS
+              │   ├── bbox2d
+              │   │   ├── yyyymmdd_xxxxxxxx_subjNN.npy
+              │   │   └── ...
+              │   ├── keypoints2d
+              │   │   ├── yyyymmdd_xxxxxxxx_subjNN.npy
+              │   │   └── ...
+              │   ├── keypoints3d
+              │   │   ├── yyyymmdd_xxxxxxxx_subjNN.npy
+              │   │   └── ...
+              │   ├── motions
+              │   │   ├── yyyymmdd_xxxxxxxx_subjNN_view0.npy
+              │   │   ├── ...
+              │   │   ├── yyyymmdd_xxxxxxxx_subjNN_view8.npy
+              │   │   └── ...
+              │   ├── cameras
+              │   │   ├── yyyymmdd_xxxxxxxx_subjNN.json
+              │   │   └── ...
+              │   └── videos
+              │        ├── yyyymmdd_xxxxxxxx_subjNN
+              │        │   └── vframes
+              │        │       ├── c01.mp4
+              │        │       ├── ...
+              │        │       └── c08.mp4
+              │        ├── ...
+              ├── 60FPS
+              │   ├── ...
+              </code>
+          </pre>
+          <p class="text">
+            
+          </p>
+        </div>
+      </div>
+      <!--End Text with File Structure-->
+      <!-------------------------------------------------------------------------------------------->
 
       <div class="content-table flex-column">
         <!-------------------------------------------------------------------------------------------->
@@ -383,15 +408,16 @@
               </div> -->
               <div class="flex-item flex-item-stretch-4 flex-column">
                 <p class="text">
-                  <a class="highlight-text" href="javascript:void(0)">Jiong Wang, Fengyu Yang</a><br>
-                  Co-First authors. This work is done when Jiong is an MPhil student and Fengyu is an Msc student supervised by Prof. Ruimao Zhang at The Chinese University of Hong Kong (Shenzhen).
+                  <a class="highlight-text" href="https://wangjiongw.github.io">Jiong Wang</a>, 
+                  <a class="highlight-text">Fengyu Yang</a><br>
+                  <b>Co-First authors</b>. This work is done when Jiong is an MPhil student and Fengyu is an Msc student supervised by Prof. Ruimao Zhang at The Chinese University of Hong Kong (Shenzhen).
                 </p>
               </div>
             </div>
             <div class="flex-row">
               <div class="flex-item flex-item-stretch-4 flex-column">
                 <p class="text">
-                  <a class="highlight-text" href="javascript:void(0)">Wenbo Gou, Danqi Yan, Bingliang Li</a><br>
+                  <a class="highlight-text">Wenbo Gou, Danqi Yan, Bingliang Li</a><br>
                   This work is done when they are research assistant at the research group supervised by Prof. Ruimao Zhang. 
                   Bingliang is also Msc student at School of Data Science, The Chinese University of Hong Kong, Shenzhen.
                 </p>
@@ -410,7 +436,7 @@
                 <p class="text">
                   <a class="highlight-text">Yijun Gao, </a>
                   <a class="highlight-text" href="https://scholar.google.com/citations?user=gMbAGbMAAAAJ">Junle Wang</a><br>
-                  Mr. Gao and Dr. Wang are affiliated with TEG, Tencent. Yijun provides support on data collection tools and Junle is the leader of team in Tencent. Thanks for their support.
+                  Mr. Gao and Dr. Wang are affiliated with IEG, Tencent. Yijun provides support on data collection tools and Junle is the leader of team in Tencent. Thanks for their support.
                 </p>
               </div>
             </div>
@@ -418,7 +444,7 @@
               <div class="flex-item flex-item-stretch-4 flex-column">
                 <p class="text">
                   <a class="highlight-text" href="http://www.zhangruimao.site/">Ruimao Zhang</a><br>
-                  Prof. Zhang is the corresponding author of this work. He's also the supervisor of students participating in this work.
+                  <b>Prof. Zhang is the corresponding author of this work.</b> He's also the supervisor of students participating in this work.
                 </p>
               </div>
             </div>
@@ -442,8 +468,11 @@
           </div>
         </div>
       </div>
-      
+      <div style="width: 200px; text-align: center; margin: 0 auto;">
+        <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=kJxkdsFr4mqzdG5y-vUIzkVtC4XEwYErKk2MO5GnnXA"></script>
+      </div>
     </div>
+    
     <div class="footer-container"></div>
     </div>
   </div>
